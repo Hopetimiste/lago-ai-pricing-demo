@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f3f4f6;
+  --foreground: #19212e;
+  --lago-grey-100: #f3f4f6;
+  --lago-grey-200: #e7eaee;
+  --lago-grey-300: #d9dee7;
+  --lago-grey-400: #c3c9d5;
+  --lago-grey-500: #8c95a6;
+  --lago-grey-600: #66758f;
+  --lago-grey-700: #19212e;
+  /* Accent tokens remapped from violet to dark */
+  --lago-purple-100: #e7eaee;
+  --lago-purple-200: #c3c9d5;
+  --lago-purple-300: #8c95a6;
+  --lago-purple-400: #66758f;
+  --lago-purple-500: #2a3342;
+  --lago-purple-600: #19212e;
+  --lago-purple-700: #0f141c;
+  --lago-purple-800: #000000;
+  --lago-blue-600: #006cfa;
+  --lago-green-100: #e3fcf4;
+  --lago-green-600: #008559;
+  --lago-red-100: #ffebe6;
+  --lago-red-600: #dc3309;
+  --lago-yellow-100: #fff7e6;
+  --lago-yellow-600: #ff7e1d;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-lago-grey-100: var(--lago-grey-100);
+  --color-lago-grey-200: var(--lago-grey-200);
+  --color-lago-grey-300: var(--lago-grey-300);
+  --color-lago-grey-400: var(--lago-grey-400);
+  --color-lago-grey-500: var(--lago-grey-500);
+  --color-lago-grey-600: var(--lago-grey-600);
+  --color-lago-grey-700: var(--lago-grey-700);
+  --color-lago-purple-100: var(--lago-purple-100);
+  --color-lago-purple-200: var(--lago-purple-200);
+  --color-lago-purple-400: var(--lago-purple-400);
+  --color-lago-purple-500: var(--lago-purple-500);
+  --color-lago-purple-600: var(--lago-purple-600);
+  --color-lago-purple-700: var(--lago-purple-700);
+  --color-lago-blue-600: var(--lago-blue-600);
+  --color-lago-green-100: var(--lago-green-100);
+  --color-lago-green-600: var(--lago-green-600);
+  --color-lago-red-100: var(--lago-red-100);
+  --color-lago-red-600: var(--lago-red-600);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--lago-grey-100);
+  color: var(--lago-grey-700);
+  font-family: var(--font-geist-sans), Inter, Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  background: #19212e;
+  color: #ffffff;
+  font-weight: 600;
+  transition: background-color 150ms ease;
+}
+
+.btn-primary:hover {
+  background: #2a3342;
+  color: #ffffff;
+}
+
+.btn-primary:disabled {
+  background: #c3c9d5;
+  color: #ffffff;
+  cursor: not-allowed;
+}
