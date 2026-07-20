@@ -60,7 +60,7 @@ Open `http://localhost:3001`.
 
 1. Choose **Standard** or **Premium** on the pricing page.
 2. Fill in first name, last name, personal/company details, and billing address.
-3. Continue to Stripe and register a test card (`4242 4242 4242 4242`).
+3. Continue to Stripe and register a test card (`4111 1111 1111 1111`).
 4. Stripe redirects back to `/checkout/complete`, which:
    - links the registered card to the Stripe/Lago customer
    - creates the Lago subscription
